@@ -1,6 +1,6 @@
 [project]
 name = "spice-solver"
-version = "0.0.1"
+version = "0.0.2"
 description = "Name reservation for future developments."
 readme = "README.md"
 authors = [
