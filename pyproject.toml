@@ -11,9 +11,18 @@ dependencies = [
     "numpy>=1.20",
 ]
 
+[dependency-groups]
+dev = [
+    "genbadge[all]>=1.1.2",
+    "jupyterlab>=4.4.6",
+    "notebook>=7.4.5",
+    "pytest>=8.0",
+    "pytest-cov>=6.0",
+]
+
 [project.urls]
 Source = "https://github.com/bertpl/spice-solver"
-ChangeLog = "https://github.com/bertpl/spice-solver/blob/develop/CHANGELOG.md"
+ChangeLog = "https://github.com/bertpl/spice-solver/blob/main/CHANGELOG.md"
 Issues = "https://github.com/bertpl/spice-solver/issues"
 Roadmap = "https://github.com/bertpl/spice-solver/milestones"
 
@@ -31,14 +40,9 @@ packages = ["spice_solver"]
 line-length = 120
 target-version = "py313"
 
+[tool.coverage.run]
+source = ["spice_solver"]
+
 [tool.ruff.lint]
 select = ["I"]
 
-[dependency-groups]
-dev = [
-    "genbadge[all]>=1.1.2",
-    "jupyterlab>=4.4.6",
-    "notebook>=7.4.5",
-    "pytest>=8.0",
-    "pytest-cov>=6.0",
-]
